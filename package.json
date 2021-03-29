@@ -1,0 +1,33 @@
+{
+  "name": "addika",
+  "version": "1.0.0",
+  "description": "Challege Back-end",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "nodemon index.js"
+  },
+  "keywords": [
+    "Challege",
+    "back-end",
+    "Javascript",
+    "NodeJs",
+    "PostgreSQL"
+  ],
+  "author": "Noé Ramírez Guerrero",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
