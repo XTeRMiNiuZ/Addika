@@ -31,27 +31,40 @@ Todas las rutas que necesiten acceso por token necesitarán este header que debe
 
 x-access-token: <token>
 
-- Users
+Users
+```bash
 Se necesita un token de administrador para usar estas ligas.
 GET - localhost:8080/api/users
 GET - localhost:8080/api/user/:id
 PUT - localhost:8080/api/user/:id
 DELETE - localhost:8080/api/user/:id
+```
 
-- Logs
+Logs
+
+```bash
 Se necesita un token de administrador para usar esta liga.
 GET - localhost:8080/api/logs
+```
 
-- Auth
+Auth
+
+```bash
 POST - localhost:8080/api/auth/signin
 Se necesita un token de administrador para usar esta liga.
 POST - localhost:8080/api/auth/signup
+```
 
-- Reviews
+Reviews
+
+```bash
 POST - localhost:8080/api/review
 Se necesita un token y permiso para ver esta liga. El admin solo necesita el token.
+```
 
-- Posts
+Posts
+
+```bash
 Aquí se pueden agregar datos al query para buscar por fecha.
 GET - localhost:8080/api/posts
 GET - localhost:8080/api/posts?startDate=<fechaJS>&endDate=<fechaJS>
@@ -60,6 +73,7 @@ POST - localhost:8080/api/posts
 GET - localhost:8080/api/post/:id
 PUT - localhost:8080/api/post/:id
 DELETE - localhost:8080/api/post/:id
+```
 
 Debido al tiempo y reconociendo la falta de experiencia con pruebas unitarias, les adjunto un documento de pruebas que realizo en el lugar de trabajo. Puede que sea extenso debido a todas las validaciones que estuve encontrando en el camino y corrigiendo entradas.
 
